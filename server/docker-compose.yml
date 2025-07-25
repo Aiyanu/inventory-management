@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: inventory_management_postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: aiyanu
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: inventory
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
