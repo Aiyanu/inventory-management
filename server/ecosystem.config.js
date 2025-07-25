@@ -1,5 +1,5 @@
 module.export = {
-  app: [
+  apps: [
     {
       name: "inventory-managment",
       script: "npm",
