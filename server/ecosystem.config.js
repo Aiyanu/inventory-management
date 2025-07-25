@@ -1,7 +1,7 @@
-module.export = {
+module.exports = {
   apps: [
     {
-      name: "inventory-managment",
+      name: "inventory-management",
       script: "npm",
       args: "run dev",
       env: {
